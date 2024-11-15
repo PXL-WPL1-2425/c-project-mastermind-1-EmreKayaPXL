@@ -7,10 +7,40 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox Name="ComboBox1" HorizontalAlignment="Left" Margin="25,61,0,0" VerticalAlignment="Top" Width="180" />
-        <ComboBox Name="ComboBox2" HorizontalAlignment="Left" Margin="215,61,0,0" VerticalAlignment="Top" Width="180"/>
-        <ComboBox Name="ComboBox3" HorizontalAlignment="Left" Margin="405,61,0,0" VerticalAlignment="Top" Width="180"/>
-        <ComboBox Name="ComboBox4" HorizontalAlignment="Left" Margin="595,61,0,0" VerticalAlignment="Top" Width="180"/>
-        <Button Name="CheckButton" Content="Check code" HorizontalAlignment="Center" Margin="0,235,0,0" VerticalAlignment="Top" Height="70" Width="148" Click="CheckButton_Click"/>
+        <StackPanel Name="ComboBoxPanel" Orientation="Horizontal" Margin="0,0,0,0">
+            <ComboBox Name="ComboBox1" HorizontalAlignment="Left" Margin="15,61,0,0" VerticalAlignment="Top" Width="180" >
+                <ComboBoxItem Background="Red">rood</ComboBoxItem>
+                <ComboBoxItem Background="Yellow">geel</ComboBoxItem>
+                <ComboBoxItem Background="Orange">oranje</ComboBoxItem>
+                <ComboBoxItem Background="White">wit</ComboBoxItem>
+                <ComboBoxItem Background="Green">groen</ComboBoxItem>
+                <ComboBoxItem Background="Blue">blauw</ComboBoxItem>
+            </ComboBox>
+            <ComboBox Name="ComboBox2" HorizontalAlignment="Left" Margin="15,61,0,0" VerticalAlignment="Top" Width="180" >
+                <ComboBoxItem Background="Red">rood</ComboBoxItem>
+                <ComboBoxItem Background="Yellow">geel</ComboBoxItem>
+                <ComboBoxItem Background="Orange">oranje</ComboBoxItem>
+                <ComboBoxItem Background="White">wit</ComboBoxItem>
+                <ComboBoxItem Background="Green">groen</ComboBoxItem>
+                <ComboBoxItem Background="Blue">blauw</ComboBoxItem>
+            </ComboBox>
+            <ComboBox Name="ComboBox3" HorizontalAlignment="Left" Margin="15,61,0,0" VerticalAlignment="Top" Width="180" >
+                <ComboBoxItem Background="Red">rood</ComboBoxItem>
+                <ComboBoxItem Background="Yellow">geel</ComboBoxItem>
+                <ComboBoxItem Background="Orange">oranje</ComboBoxItem>
+                <ComboBoxItem Background="White">wit</ComboBoxItem>
+                <ComboBoxItem Background="Green">groen</ComboBoxItem>
+                <ComboBoxItem Background="Blue">blauw</ComboBoxItem>
+            </ComboBox>
+            <ComboBox Name="ComboBox4" HorizontalAlignment="Left" Margin="15,61,0,0" VerticalAlignment="Top" Width="180" >
+                <ComboBoxItem Background="Red">rood</ComboBoxItem>
+                <ComboBoxItem Background="Yellow">geel</ComboBoxItem>
+                <ComboBoxItem Background="Orange">oranje</ComboBoxItem>
+                <ComboBoxItem Background="White">wit</ComboBoxItem>
+                <ComboBoxItem Background="Green">groen</ComboBoxItem>
+                <ComboBoxItem Background="Blue">blauw</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <Button x:Name="CheckButton" Content="Check code" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="70" Width="148" Click="CheckButton_Click" Margin="0,0,0,120"/>
     </Grid>
 </Window>
