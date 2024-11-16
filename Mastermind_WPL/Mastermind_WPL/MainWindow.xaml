@@ -5,42 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Mastermind_WPL"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="lightGray" >
     <Grid>
         <StackPanel Name="ComboBoxPanel" Orientation="Horizontal" Margin="0,0,0,0">
-            <ComboBox Name="ComboBox1" HorizontalAlignment="Left" Margin="15,61,0,0" VerticalAlignment="Top" Width="180" >
-                <ComboBoxItem Background="Red">rood</ComboBoxItem>
-                <ComboBoxItem Background="Yellow">geel</ComboBoxItem>
-                <ComboBoxItem Background="Orange">oranje</ComboBoxItem>
-                <ComboBoxItem Background="White">wit</ComboBoxItem>
-                <ComboBoxItem Background="Green">groen</ComboBoxItem>
-                <ComboBoxItem Background="Blue">blauw</ComboBoxItem>
+            <ComboBox Name="ComboBox1" BorderThickness="3" HorizontalAlignment="Left" Margin="15,61,0,0" VerticalAlignment="Top" Width="180" SelectionChanged="ComboBox1_SelectionChanged" >
+                <ComboBoxItem Content="Rood" Background="Red"></ComboBoxItem>
+                <ComboBoxItem Content="Geel" Background="Yellow"></ComboBoxItem>
+                <ComboBoxItem Content="Oranje" Background="Orange"></ComboBoxItem>
+                <ComboBoxItem Content="Wit" Background="White"></ComboBoxItem>
+                <ComboBoxItem Content="Groen" Background="Green"></ComboBoxItem>
+                <ComboBoxItem Content="Blauw" Background="Blue"></ComboBoxItem>
             </ComboBox>
-            <ComboBox Name="ComboBox2" HorizontalAlignment="Left" Margin="15,61,0,0" VerticalAlignment="Top" Width="180" >
-                <ComboBoxItem Background="Red">rood</ComboBoxItem>
-                <ComboBoxItem Background="Yellow">geel</ComboBoxItem>
-                <ComboBoxItem Background="Orange">oranje</ComboBoxItem>
-                <ComboBoxItem Background="White">wit</ComboBoxItem>
-                <ComboBoxItem Background="Green">groen</ComboBoxItem>
-                <ComboBoxItem Background="Blue">blauw</ComboBoxItem>
+            <ComboBox Name="ComboBox2" BorderThickness="3" HorizontalAlignment="Left" Margin="15,61,0,0" VerticalAlignment="Top" Width="180" SelectionChanged="ComboBox2_SelectionChanged" >
+                <ComboBoxItem Content="Rood" Background="Red"></ComboBoxItem>
+                <ComboBoxItem Content="Geel" Background="Yellow"></ComboBoxItem>
+                <ComboBoxItem Content="Oranje" Background="Orange"></ComboBoxItem>
+                <ComboBoxItem Content="Wit" Background="White"></ComboBoxItem>
+                <ComboBoxItem Content="Groen" Background="Green"></ComboBoxItem>
+                <ComboBoxItem Content="Blauw" Background="Blue"></ComboBoxItem>
             </ComboBox>
-            <ComboBox Name="ComboBox3" HorizontalAlignment="Left" Margin="15,61,0,0" VerticalAlignment="Top" Width="180" >
-                <ComboBoxItem Background="Red">rood</ComboBoxItem>
-                <ComboBoxItem Background="Yellow">geel</ComboBoxItem>
-                <ComboBoxItem Background="Orange">oranje</ComboBoxItem>
-                <ComboBoxItem Background="White">wit</ComboBoxItem>
-                <ComboBoxItem Background="Green">groen</ComboBoxItem>
-                <ComboBoxItem Background="Blue">blauw</ComboBoxItem>
+            <ComboBox Name="ComboBox3" BorderThickness="3" HorizontalAlignment="Left" Margin="15,61,0,0" VerticalAlignment="Top" Width="180" SelectionChanged="ComboBox3_SelectionChanged" >
+                <ComboBoxItem Content="Rood" Background="Red"></ComboBoxItem>
+                <ComboBoxItem Content="Geel" Background="Yellow"></ComboBoxItem>
+                <ComboBoxItem Content="Oranje" Background="Orange"></ComboBoxItem>
+                <ComboBoxItem Content="Wit" Background="White"></ComboBoxItem>
+                <ComboBoxItem Content="Groen" Background="Green"></ComboBoxItem>
+                <ComboBoxItem Content="Blauw" Background="Blue"></ComboBoxItem>
             </ComboBox>
-            <ComboBox Name="ComboBox4" HorizontalAlignment="Left" Margin="15,61,0,0" VerticalAlignment="Top" Width="180" >
-                <ComboBoxItem Background="Red">rood</ComboBoxItem>
-                <ComboBoxItem Background="Yellow">geel</ComboBoxItem>
-                <ComboBoxItem Background="Orange">oranje</ComboBoxItem>
-                <ComboBoxItem Background="White">wit</ComboBoxItem>
-                <ComboBoxItem Background="Green">groen</ComboBoxItem>
-                <ComboBoxItem Background="Blue">blauw</ComboBoxItem>
+            <ComboBox Name="ComboBox4" BorderThickness="3" HorizontalAlignment="Left" Margin="15,61,0,0" VerticalAlignment="Top" Width="180" SelectionChanged="ComboBox4_SelectionChanged" >
+                <ComboBoxItem Content="Rood" Background="Red"></ComboBoxItem>
+                <ComboBoxItem Content="Geel" Background="Yellow"></ComboBoxItem>
+                <ComboBoxItem Content="Oranje" Background="Orange"></ComboBoxItem>
+                <ComboBoxItem Content="Wit" Background="White"></ComboBoxItem>
+                <ComboBoxItem Content="Groen" Background="Green"></ComboBoxItem>
+                <ComboBoxItem Content="Blauw" Background="Blue"></ComboBoxItem>
             </ComboBox>
+
         </StackPanel>
-        <Button x:Name="CheckButton" Content="Check code" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="70" Width="148" Click="CheckButton_Click" Margin="0,0,0,120"/>
+        <Label Name="label1" FontSize="20" FontWeight="DemiBold" Content="Kleur 1" HorizontalContentAlignment="Center" BorderBrush="Purple" BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,116,0,0" Height="180" Width="180"/>
+        <Label Name="label2" FontSize="20" FontWeight="DemiBold" Content="Kleur 2" HorizontalContentAlignment="Center" BorderBrush="Purple" BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,116,0,0" Height="180" Width="180"/>
+        <Label Name="label3" FontSize="20" FontWeight="DemiBold" Content="Kleur 3" HorizontalContentAlignment="Center" BorderBrush="Purple" BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="405,116,0,0" Height="180" Width="180"/>
+        <Label Name="label4" FontSize="20" FontWeight="DemiBold" Content="Kleur 4" HorizontalContentAlignment="Center" BorderBrush="Purple" BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="600,116,0,0" Height="180" Width="180"/>
+        <Button x:Name="CheckButton" Content="Check code" Background="Gray" BorderBrush="Black" BorderThickness="4" VerticalAlignment="Top" HorizontalAlignment="Left" Height="70" Width="148" Click="CheckButton_Click" Margin="600,317,0,0"/>
     </Grid>
 </Window>

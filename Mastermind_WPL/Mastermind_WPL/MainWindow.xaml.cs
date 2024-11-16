@@ -59,6 +59,48 @@ namespace Mastermind_WPL
 
         }
 
+        private void ComboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ComboBox1.SelectedItem is ComboBoxItem ComboBox1Item)  // als item is geselecteerd
+            {
+                if (ComboBox1Item.Background is SolidColorBrush Kleur) // dan: kleur borstel naar achtergrondskleur van geselecteerde Item
+                { 
+                    label1.Background = Kleur;   //label de keur geven van achtergrondskleur van geselecteerde Item  
+                }
+            }
+        }
 
+        private void ComboBox2_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ComboBox2.SelectedItem is ComboBoxItem ComboBox2Item) 
+            {
+                if (ComboBox2Item.Background is SolidColorBrush Kleur) 
+                {
+                    label2.Background = Kleur;   
+                }
+            }
+        }
+
+        private void ComboBox3_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ComboBox3.SelectedItem is ComboBoxItem ComboBox3Item) 
+            {
+                if (ComboBox3Item.Background is SolidColorBrush Kleur) 
+                {
+                    label3.Background = Kleur;   
+                }
+            }
+        }
+
+        private void ComboBox4_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ComboBox4.SelectedItem is ComboBoxItem ComboBox4Item) 
+            {
+                if (ComboBox4Item.Background is SolidColorBrush Kleur) 
+                {
+                    label4.Background = Kleur;   
+                }
+            }
+        }
     }
 }
