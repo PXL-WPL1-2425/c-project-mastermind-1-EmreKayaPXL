@@ -109,10 +109,12 @@ namespace Mastermind_WPL
 
         private void CheckButton_Click(object sender, RoutedEventArgs e)
         {
+            label1.BorderBrush = Brushes.LightGray;
+            label2.BorderBrush = Brushes.LightGray;
+            label3.BorderBrush = Brushes.LightGray;
+            label4.BorderBrush = Brushes.LightGray;
+
             string[] titleColors = this.Title.Split(':')[1].Split(',');
-
-
-
 
             int MasterMindStrenghtNumber = 0;
 
@@ -184,7 +186,7 @@ namespace Mastermind_WPL
                     resultTextBlock.Text = "3 kleuren komen voor";
                     break;
                 case 2:
-                    resultTextBlock.Text = "2 kleur komt voor";
+                    resultTextBlock.Text = "2 kleuren komen voor";
                     break;
                 case 1:
                     resultTextBlock.Text = "1 kleur komt voor";

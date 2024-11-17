@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Mastermind_WPL"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="lightGray" >
+        Title="MasterMind" Height="450" Width="800" Background="LightGray" >
     <Grid>
         <StackPanel Name="ComboBoxPanel" Orientation="Horizontal" Margin="0,0,0,0">
             <ComboBox Name="ComboBox1" BorderThickness="3" HorizontalAlignment="Left" Margin="15,61,0,0" VerticalAlignment="Top" Width="180" SelectionChanged="ComboBox1_SelectionChanged" >
@@ -47,7 +47,8 @@
         <Label Name="label2" FontSize="20" FontWeight="DemiBold" Content="Kleur 2" HorizontalContentAlignment="Center" BorderThickness="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,116,0,0" Height="180" Width="180"/>
         <Label Name="label4" FontSize="20" FontWeight="DemiBold" Content="Kleur 4" HorizontalContentAlignment="Center" BorderThickness="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="600,116,0,0" Height="180" Width="180"/>
         <Label Name="label3" FontSize="20" FontWeight="DemiBold" Content="Kleur 3" HorizontalContentAlignment="Center" BorderThickness="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="405,116,0,0" Height="180" Width="180"/>
-         <TextBlock Name="resultTextBlock" Text="" Margin="32,317,-32,-317"/>
+        <TextBlock Name="resultTextBlock" FontSize="15" Text="" Margin="32,10,285,376"/>
         <Button x:Name="CheckButton" Content="Check code" Background="Gray" BorderBrush="Black" BorderThickness="4" VerticalAlignment="Top" HorizontalAlignment="Left" Height="70" Width="148" Click="CheckButton_Click" Margin="600,317,0,0"/>
+        <Label Name="uitlegSpel" FontSize="15" FontWeight="DemiBold" Content="UITLEG:&#xD;&#xA;Kies de juiste kleur die op de juiste plaats hoort.&#xD;&#xA;Rode rand betekent dat de kleur op de juiste plaats staat.&#xD;&#xA;Witte rand betekent dat de kleur juist is maar op de verkeerde plaats staat " HorizontalAlignment="Left" Margin="32,307,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
